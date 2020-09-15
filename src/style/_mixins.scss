@@ -1,0 +1,4 @@
+@mixin font-variant($font-size) {
+    font-size: $font-size;
+    font-weight: bold;
+}
