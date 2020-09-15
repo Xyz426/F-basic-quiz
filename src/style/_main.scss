@@ -2,7 +2,6 @@
     background-color: $white; 
     .about-me{
         padding: 1em;
-
         .about-me-title{
             @include font-variant(18px);
             color: $primary-color;    
@@ -11,6 +10,7 @@
     
     .education{
         padding: 1em;
+        padding-top: 0;
         width: 100%;
 
         .education-title{
@@ -30,6 +30,7 @@
                     margin: 0;
                     padding: 1em;
                     background-color: $body-bg;
+                    margin-bottom: 1em;;
                     > b{
                         display: block;
                     }

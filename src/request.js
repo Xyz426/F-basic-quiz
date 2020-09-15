@@ -6,4 +6,10 @@ const requestUserInfo = async(id) =>{
     return data; 
 }
 
-export {requestUserInfo};
+const requestUserEducationsInfo = async(id) =>{
+    const response = await fetch(URL+`/${id}/educations`,{method: "GET",});
+    const data = await response.json();
+    return data; 
+}
+
+export {requestUserInfo, requestUserEducationsInfo};
