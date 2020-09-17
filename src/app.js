@@ -2,6 +2,7 @@ import "./style/index.scss";
 import { requestUserInfo, requestUserEducationsInfo } from "./request";
 
 const url = window.location.href;
+// TODO feedback: 逻辑有漏洞，如果URL是/any/1，也是可以通过的
 const id = url.split("users/")[1];
 
 const getUser = async () => {
